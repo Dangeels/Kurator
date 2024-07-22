@@ -6,6 +6,6 @@ res = []
 
 for i in range(len(arr)-1):
     x = arr[i]+arr[i+1]
-    if (x)%2==0:
+    if (x)%2==0 and arr[i]<arr[i+1]:
         res.append(x)
 print(len(res), max(res))
